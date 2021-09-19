@@ -8,7 +8,7 @@ let rawdata = fs.readFileSync('dbLogin.json');
 let dbLogin = JSON.parse(rawdata);
 
 const { Pool, Client } = require('pg');
-const pool = new Pool(dbLogin);
+const client = new Client(dbLogin);
 
 var dashRouter = require('./routes/dash.js');
 var loginRouter = require('./routes/login.js');
