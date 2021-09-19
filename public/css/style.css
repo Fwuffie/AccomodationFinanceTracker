@@ -1,8 +1,63 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+:root {
+  font-family: 'Open Sans', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  /*height: 100vh;*/
+  overflow: hidden;
+}
+
+header {
+  height: 3rem;
+  background: #14339a;
+}
+
+#status {
+  padding: 2.5em;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#status > p {
+  margin: 0px;
+}
+
+#debt {font-size: 6em;}
+
+ul#actions {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#actions > li {
+  padding: 1em;
+  border: black 2px solid;
+  text-align: center;
+}
+
+form#login {
+  display: flex;
+  flex-direction: column;
+  margin: 5em;
+}
+
+form#login > input {
+  display: flex;
+  width: 100%;
+  align-self: center;
+}
+
+form#login > input[type="submit"] {
+  margin: 10px;
+  display: flex;
+  align-self: flex-end;
+  width: auto;
 }
